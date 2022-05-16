@@ -21,7 +21,7 @@ export default function Footer() {
       <div className={styles.footer__links}>
         <h3>Mais Informações</h3>
         <ul>
-          <li> <a href="#">Contrato</a> </li>
+          <li> <a href="#">Contato</a> </li>
           <li> <a href="#">Sobre nós</a> </li>
           <li> <a href="#">Termos e Condições</a> </li>
         </ul>
