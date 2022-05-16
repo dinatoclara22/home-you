@@ -1,0 +1,30 @@
+@import '../../styles/variaveis';
+@import '../../styles/breakpoints';
+
+.orcamento {
+  @include center;
+  flex-direction: column;
+  gap: 2em;
+  height: 400px;
+
+  @include mobile {
+    height: 300px;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  p {
+    color: $grey;
+    font-size: 18px;
+    font-weight: 500;
+
+    @include mobile {
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+}

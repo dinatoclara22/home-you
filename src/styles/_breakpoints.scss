@@ -1,0 +1,47 @@
+$mobile1: 300px;
+$mobile2: 768px;
+$desktop_xsm: 980px;
+$desktop_sm: 1080px;
+$desktop_md: 1280px;
+$desktop_ws: 1680px;
+
+@mixin responsive($device) {
+  @if $device == mobile {
+    // Resolução até 768px
+    @media screen and (max-width: $mobile2) {
+      @content;
+    }
+  } @else if $device == xsm {
+    // Resolução entre 768px e 980px
+    @media screen and (min-width: $mobile2) and (max-width: $desktop_xsm) {
+      @content;
+    }
+  } @else if $device == sm {
+    // Resolução entre 980px e 1080px
+    @media screen and (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+      @content;
+    }
+  } @else if $device == md {
+    // Resolução entre 1080px e 1280px
+    @media screen and (min-width: $desktop_sm) and (max-width: $desktop_md) {
+      @content;
+    }
+  } @else if $device == lg {
+    // Resolução maior que 1280px
+    @media screen and (min-width: $desktop_md) {
+      @content;
+    }
+  }
+} ;
+
+@mixin mobile {
+  @media (min-width: $mobile1) and (max-width: $mobile2) {
+      @content
+  }
+};
+
+@mixin widescreen {
+  @media (min-width: $desktop_ws) {
+    @content
+  }
+}

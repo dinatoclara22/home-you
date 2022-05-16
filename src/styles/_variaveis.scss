@@ -1,0 +1,11 @@
+$white: #FFFFFF;
+$grey: #797979;
+$light-grey:#F9F9F9;
+$black: #272727;
+
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

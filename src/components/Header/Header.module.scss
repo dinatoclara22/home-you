@@ -1,0 +1,84 @@
+@import '../../styles/variaveis';
+@import '../../styles/breakpoints';
+
+.header {
+  background-color: $white;
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+
+  @include mobile {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__logoContainer {
+    display: flex;
+    align-items: center;
+
+    &__logo {
+      background-color: $black;
+      margin-right: 1em;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+  }
+
+  &__menuHamburguer {
+    @include center;
+    visibility: hidden;
+
+    @include mobile {
+      visibility: visible;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    &__list {
+      display: flex;
+      margin-right: 2.5em;
+      gap: 2.5em;
+
+      li {
+        list-style: none;
+      }
+      a {
+        color: $black;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+          color: $grey;
+        }
+        
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &__icons {
+      display: flex;
+      gap: 2.5em;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        color: $light-grey;
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+}

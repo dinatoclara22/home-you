@@ -1,0 +1,63 @@
+@import '../../styles/variaveis';
+@import '../../styles/breakpoints';
+
+.footer {
+  background-color: $light-grey;
+  @include center;
+  gap: 5em;
+  height: 321px;
+
+  @include mobile {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 258px;
+  }
+
+  &__logo {
+    background-color: $black;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 6em;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__links {
+
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 1em;
+
+      @include mobile {
+        font-size: 17px;
+        margin-bottom: 0;
+      }
+    }
+
+    li {
+      margin-bottom: 1em;
+
+      @include mobile {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      color: $black;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s ease-out;
+
+      @include mobile {
+        font-size: 15px;
+      }
+
+      &:hover{
+          color: $grey;
+      }
+    }
+  }
+}
