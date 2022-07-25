@@ -1,5 +1,5 @@
 ## 📍Projeto Codelândia - HomeYou
-O desafio foi criado pela comunidade [Codelândia](https://discord.gg/wNCWTVuxyz), que é uma comunidade aberta para todo tipo de desenvolverdor.
+O desafio foi criado pela comunidade [Codelândia](https://discord.gg/wNCWTVuxyz), que é uma comunidade aberta para todo tipo de desenvolvedor.
 
 **Página de Visualização:** https://home-you.vercel.app
 
